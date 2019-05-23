@@ -15,9 +15,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/home', function () {
-    return view('home');
-});
+
 
 
 Route::get('/Register','RegisterController@register');
@@ -27,4 +25,11 @@ Route::get('/login','sessionscontroller@show');
 Route::post('/login','sessionscontroller@store');
 
 Route::get('/logout','sessionscontroller@logout');
+
+Route::get('/upload','UploadController@show');
+Route::post('/upload','UploadController@MakeUpload');
+
+Route::get('/files','HomeController@show');
+Route::get('/files/{file}','HomeController@display');
+
 
