@@ -12,6 +12,19 @@ class HomeController extends Controller
     	return view('home' , compact('files'));
     }
 
+    public function show1()
+    {
+    	
+    	return view('homepage');
+    }
+ 
+    public function showerror()
+    {
+        
+        return view('errorPage');
+    }
+
+
       public function display()
     {
     	return view('login' );

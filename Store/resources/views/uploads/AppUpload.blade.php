@@ -67,42 +67,15 @@
         <div class="flex-center position-ref full-height">
             <div class="content">
                 <h1>Upload File</h1>
-            <form action="{{URL::to('upload')}}" method="post" enctype="multipart/form-data">
+            <form action="{{URL::to('upload/app')}}" method="post" enctype="multipart/form-data">
                 {{csrf_field()}}
 
 
-                <label>File Name : </label>
-                <input type="txt" name="name" id="name"><br>
+                <label>System Requierment: </label>
+                <input type="txt" name="Requierment" id="Requierment"><br>
 
-                <br><label>File Size :    </label>
-                <input type="text" name="size" id="size"><br>
-
-                <br><label>Description :    </label>
-                <input type="text"  name="description" id="description"><br>
-
-                 <br><label>Price :    </label>
-                <input type="text"  name="price" id="price"><br>
-
-
-                <input class="input100" type="text" id= "user_id" name="user_id" value="{{Auth::user()->id}}" hidden="true">
-
-
-
-                <br>  <label>Select Icon To Upload : </label>
-                <input type="file" name="icon" id="icon"><br>
-
-                 <br>  <label>Select File To Upload : </label>
-                <input type="file" name="file" id="file"><br>
-
-
-                 <br>  <label>Select File Category:</label>
-                  <select class="input-select" name="category">
-                    <option value="0">All Categories</option>
-                    @foreach($categories as $category)
-                    <option value="{{$category->id}}" name ="category">  {{$category -> name}}  </option>
-                    @endforeach
-                  </select>
-
+                <input type="txt" name="file_id" id="file_id" value='{{$file_id}}'><br>
+                
               <br>  <input type="submit" value="Upload" name="submit">
             <input type="hidden" value="{{csrf_token()}}" name="_token">
             </form>

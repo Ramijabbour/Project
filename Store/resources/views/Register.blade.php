@@ -31,6 +31,7 @@
           </div>
           <div class="wrap-input100 validate-input" data-validate = "Email is required">
             <input class="input100" type="email" id= "Email" name="Email" value="{{ old('Email') }}">
+            
             <span class="focus-input100"></span>
           </div>
            <!--        -- >

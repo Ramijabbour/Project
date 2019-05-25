@@ -16,7 +16,7 @@ class CreateGamesTable extends Migration
         Schema::create('games', function (Blueprint $table) {
             $table->increments('id');
             $table->integer('file_id')->unsigned()->index();
-            $table->text('System-requirment');
+            $table->text('System_requirment');
             $table->timestamps();
         });
     }

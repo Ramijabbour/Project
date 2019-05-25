@@ -19,7 +19,7 @@ class sessionscontroller extends Controller
 				'massage'=>'Email or password not correct ! '
 			]);
 		}
-		return redirect('home');
+		return redirect('files');
 	}
 
     
@@ -27,6 +27,6 @@ class sessionscontroller extends Controller
 	{
 		auth()->logout();
 
-		return redirect('home');
+		return redirect('files');
 	}
 }

@@ -9,7 +9,6 @@
 
     <link type="text/css" rel="stylesheet" href="css/style1.css"/>
     <link type="text/css" rel="stylesheet" href="css/newstyle.css"/>
-
     <link type="text/css" rel="stylesheet" href="css/mystyle.css"/>
     <link type="text/css" rel="stylesheet" href="css/img.css"/>
 
@@ -52,11 +51,7 @@
   <!--                           -->
 
 
-
-
-
-  
-    </head>
+  </head>
   <body>
     <!-- HEADER -->
     <header>
@@ -64,12 +59,12 @@
       <div id="top-header">
         <div class="container">
           <ul class="header-links pull-left">
-            <li><a href="#"><i class="fa fa-phone"></i> +021-95-51-84</a></li>
-            <li><a href="#"><i class="fa fa-envelope-o"></i> email@email.com</a></li>
-            <li><a href="#"><i class="fa fa-map-marker"></i> 1734 Stonecoal Road</a></li>
+            <li><a href="#"><i class="fa fa-phone"></i> +963-0930721756</a></li>
+            <li><a href="#"><i class="fa fa-envelope-o"></i> team@gmail.com</a></li>
+            <li><a href="#"><i class="fa fa-map-marker"></i> Syria , Damascuse</a></li>
           </ul>
           <ul class="header-links pull-right">
-            <li><a href="#"><i class="fa fa-dollar"></i> USD</a></li>
+            
             @if(Auth::check())
             <li><a href="profile"><i class="fa fa-user-o d"></i> My Account</a></li>
             @endif
@@ -195,8 +190,8 @@
         <div id="responsive-nav">
           <!-- NAV -->
           <ul class="main-nav nav navbar-nav">
-            <li class="active"><a href="#">Home</a></li>
-            <li><a href="#">Hot Deals</a></li>
+            <li class="active"><a href="files">Home</a></li>
+            <li><a href="apps">Apps</a></li>
             <li><a href="#">Categories</a></li>
             <li><a href="#">Laptops</a></li>
             <li><a href="#">Smartphones</a></li>
@@ -209,7 +204,7 @@
             <li><a href="login">login</a></li>
             @else
            <li><a href="#"> {{Auth::user()->name}} </a></li>
-            <li><a href="#">upload</a></li>
+            <li><a href="upload">upload</a></li>
             <li><a href="logout">logout</a></li> 
             
             @endif
